@@ -1,0 +1,26 @@
+[{
+  "carNo": "KA1",
+  "color": "Red",
+  "slotNo": 3,
+  "parkingTime": 1576821943905
+}, {
+  "carNo": "KA2",
+  "color": "Green",
+  "slotNo": 1,
+  "parkingTime": 1576821968789
+}, {
+  "carNo": "KA3",
+  "color": "Pink",
+  "slotNo": 4,
+  "parkingTime": 1576821968789
+}, {
+  "carNo": "KA4",
+  "color": "Green",
+  "slotNo": 2,
+  "parkingTime": 1576821968789
+}, {
+  "carNo": "KA5",
+  "color": "Pink",
+  "slotNo": 5,
+  "parkingTime": 1576821968789
+}]

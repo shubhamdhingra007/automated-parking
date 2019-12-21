@@ -1,0 +1,22 @@
+<form class="user-form" (ngSubmit)="onSubmit()" #userForm="ngForm">
+  <div class="form-group">
+    <input type="number" name="total slots" required pattern="[1-9]{1}[0-9]*" min="1"
+      placeholder="Enter total slots available" [(ngModel)]="parkingSlots" #totalSlots="ngModel" />
+    <div class="text-error" [hidden]="totalSlots.valid || totalSlots.pristine">Invalid total slots</div>
+  </div>
+
+  <div class="form-group">
+    <input type="number" name="available slots" required pattern="[0-9]+" min="0" placeholder="Enter available slots"
+      [(ngModel)]="availableSlots" #availableSlotsModel="ngModel" />
+    <div class="text-error" [hidden]="availableSlotsModel.valid || availableSlotsModel.pristine">
+      Invalid available slots
+    </div>
+  </div>
+
+  <button type="submit" class="primary-background" [disabled]="!userForm.form.valid">
+    Book
+  </button>
+
+  <div *ngIf="overflowError" class="text-error">Available slots can't be greater than total slots.</div>
+
+</form>

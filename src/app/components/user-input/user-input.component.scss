@@ -1,0 +1,10 @@
+@import 'vars';
+
+.user-form {
+  padding: 20px 0;
+  text-align: center;
+
+  .form-group {
+    margin: $size-l 0;
+  }
+}
